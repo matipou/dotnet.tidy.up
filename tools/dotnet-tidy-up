@@ -254,7 +254,7 @@ fi
 
 echo "----------------------------------------------------------------"
 
-if [ "$fileNamesInconsistenciesExists" -eq 0 ] || [ "$namespacesInconsistenciesExists" -eq 0 ]; then
+if [ "$fileNamesInconsistenciesExists" -ne 0 ] || [ "$namespacesInconsistenciesExists" -ne 0 ]; then
     echo -e "${BOLD}${YELLOW}[!]${NC} All done! Pay more attention next time, code monkey!${NC} \n"
 else
     echo -e "${BOLD}${GREEN}[+]${NC} Perfect! You were paying attention this time!${NC} \n"
